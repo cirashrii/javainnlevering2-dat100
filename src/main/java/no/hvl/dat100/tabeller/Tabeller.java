@@ -5,6 +5,8 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
+        System.out.println("Hello world!");
+
 		// TODO
 		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
 
