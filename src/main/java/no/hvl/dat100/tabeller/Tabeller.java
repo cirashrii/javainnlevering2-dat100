@@ -30,24 +30,32 @@ public class Tabeller {
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden finnesTall ikke implementert");
-
+        for (int i : tabell) {
+            if (i == tall) {
+                return true;
+            }
+        }
+        return false;
 	}
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
+        for (int i=0; i< tabell.length; i++) {
+            if(tabell[i]==tall){
+                return i;
+            }
+        }
+        return -1;
+    }
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden posisjonTall ikke implementert");
-	}
 
 	// f)
 	public static int[] reverser(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
+        int[] reverser = new int[tabell.length];
+        for (int i=0; i< tabell.length; i++) {
+            reverser[i] = tabell[tabell.length-i-1];
+        }
+        return reverser;
 	}
 
 	// g)
