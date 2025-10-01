@@ -18,9 +18,7 @@ public class Tabeller {
 	// b) Solfrid
 	public static String tilStreng(int[] tabell) {
 
-        System.out.println("Hei");
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
+        
 	}
 
 	// c) Solfrid
@@ -34,28 +32,31 @@ public class Tabeller {
 	public static boolean finnesTall(int[] tabell, int tall) {
         for (int i : tabell) {
             if (i == tall) {
-                return false;
+                return true;
             }
         }
-    }
+        return false;
+        }
 
 	// e) Andrea
 	public static int posisjonTall(int[] tabell, int tall){
             for (int i = 0; i < tabell.length; i++) {
                 if (tabell[i] == tall) {
+                    return i;
                 }
             }
+            return -1;
         }
 
 	// f) Andrea
 	public static int[] reverser(int[] tabell) {
     int[] reverser = new int[tabell.length];
     for (int i=0; i < tabell.length; i++) {
-
+        reverser[i] = tabell[tabell.length - i - 1];
+    }
         return reverser;
     }
-    }
-    
+
 
 	// g) Grethe
 	public static boolean erSortert(int[] tabell) {
