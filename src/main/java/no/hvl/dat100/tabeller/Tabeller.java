@@ -2,18 +2,16 @@ package no.hvl.dat100.tabeller;
 
 public class Tabeller {
 
-	// a)
+	// a) Solfrid
 	public static void skrivUt(int[] tabell) {
 
-        System.out.println("Hello world!");
-        System.out.println("How are you doing today?");
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
 
 	}
 
-	// b)
+	// b) Solfrid
 	public static String tilStreng(int[] tabell) {
 
         System.out.println("Hei");
@@ -21,14 +19,14 @@ public class Tabeller {
 		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
 	}
 
-	// c)
+	// c) Solfrid
 	public static int summer(int[] tabell) {
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden summer ikke implementert");
 	}
 
-	// d)
+	// d) Andrea
 	public static boolean finnesTall(int[] tabell, int tall) {
 
 		// TODO
@@ -36,28 +34,28 @@ public class Tabeller {
 
 	}
 
-	// e)
+	// e) Andrea
 	public static int posisjonTall(int[] tabell, int tall) {
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden posisjonTall ikke implementert");
 	}
 
-	// f)
+	// f) Andrea
 	public static int[] reverser(int[] tabell) {
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
 	}
 
-	// g)
+	// g) Grethe
 	public static boolean erSortert(int[] tabell) {
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
 	}
 
-	// h)
+	// h) Grethe
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
 		// TODO
