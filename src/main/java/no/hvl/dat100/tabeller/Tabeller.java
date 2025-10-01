@@ -17,16 +17,31 @@ public class Tabeller {
 
 	// b) Solfrid
 	public static String tilStreng(int[] tabell) {
+        int[] tabell = {42, 67, 89};
 
+        String resultat = "[";
+        for (int i = 0; i < tabell.length; i++) {
+            resultat += tabell[i];
+            if (i < tabell.length - 1) {
+                resultat += ",";
+            }
 
-	}
+        }
+        resultat += "]";
+
+        System.out.println(resultat);
+    }
+    }
 
 	// c) Solfrid
 	public static int summer(int[] tabell) {
+        int sum = 0;
+        for (int i = 0; i < tabell.length; i++) {
+            sum += tabell[i];
+        }
+        return sum;
+    }
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden summer ikke implementert");
-	}
 
 	// d) Andrea
 	public static boolean finnesTall(int[] tabell, int tall) {
