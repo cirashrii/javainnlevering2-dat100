@@ -15,6 +15,7 @@ public class Tabeller {
 	// b)
 	public static String tilStreng(int[] tabell) {
 
+        System.out.println("Hei");
 		// TODO
 		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
 	}
