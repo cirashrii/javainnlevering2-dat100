@@ -13,8 +13,6 @@ public class Tabeller {
 
     }
 
-}
-
 	// b) Solfrid
 	public static String tilStreng(int[] tabell) {
         int[] tabell = {42, 67, 89};
@@ -30,7 +28,6 @@ public class Tabeller {
         resultat += "]";
 
         System.out.println(resultat);
-    }
     }
 
 	// c) Solfrid
@@ -51,24 +48,24 @@ public class Tabeller {
             }
         }
         return false;
-        }
+    }
 
 	// e) Andrea
 	public static int posisjonTall(int[] tabell, int tall){
-            for (int i = 0; i < tabell.length; i++) {
-                if (tabell[i] == tall) {
-                    return i;
-                }
+        for (int i = 0; i < tabell.length; i++) {
+            if (tabell[i] == tall) {
+                return i;
             }
-            return -1;
         }
+        return -1;
+    }
 
 	// f) Andrea
 	public static int[] reverser(int[] tabell) {
-    int[] reverser = new int[tabell.length];
-    for (int i=0; i < tabell.length; i++) {
-        reverser[i] = tabell[tabell.length - i - 1];
-    }
+        int[] reverser = new int[tabell.length];
+        for (int i=0; i < tabell.length; i++) {
+            reverser[i] = tabell[tabell.length - i - 1];
+        }
         return reverser;
     }
 
