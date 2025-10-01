@@ -4,12 +4,14 @@ public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
+        int[] timeTab = {8, 10, 14, 16, 22, 26};
 
-        System.out.println("Hello world!");
-        System.out.println("How are you doing today?");
+        for (int i = 0; i < tabell.length; i++) {
+            System.out.print(tabell[i] + " ");
+        }
+        System.out.println();
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+        }
 
 	}
 
