@@ -32,25 +32,30 @@ public class Tabeller {
 
 	// d) Andrea
 	public static boolean finnesTall(int[] tabell, int tall) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden finnesTall ikke implementert");
-
-	}
+        for (int i : tabell) {
+            if (i == tall) {
+                return false;
+            }
+        }
+    }
 
 	// e) Andrea
-	public static int posisjonTall(int[] tabell, int tall) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden posisjonTall ikke implementert");
-	}
+	public static int posisjonTall(int[] tabell, int tall){
+            for (int i = 0; i < tabell.length; i++) {
+                if (tabell[i] == tall) {
+                }
+            }
+        }
 
 	// f) Andrea
 	public static int[] reverser(int[] tabell) {
+    int[] reverser = new int[tabell.length];
+    for (int i=0; i < tabell.length; i++) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
-	}
+        return reverser;
+    }
+    }
+    
 
 	// g) Grethe
 	public static boolean erSortert(int[] tabell) {
