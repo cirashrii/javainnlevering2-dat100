@@ -6,8 +6,8 @@ public class Tabeller {
 	public static void skrivUt(int[] tabell) {
         int[] timeTab = {8, 10, 14, 16, 22, 26};
 
-        for (int i = 0; i < tabell.length; i++) {
-            System.out.print(tabell[i] + " ");
+        for (int i = 0; i < timeTab.length; i++) {
+            System.out.print(timeTab[i] + " ");
         }
         System.out.println();
 
@@ -18,7 +18,7 @@ public class Tabeller {
 	// b) Solfrid
 	public static String tilStreng(int[] tabell) {
 
-        
+
 	}
 
 	// c) Solfrid
