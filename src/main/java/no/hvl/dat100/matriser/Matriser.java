@@ -40,9 +40,10 @@ public class Matriser {
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
         boolean erLik = true;
+        boolean arraySjekk = true;
         int i = 0;
         int j = 0;
-        while (erLik) {
+        while (erLik && arraySjekk) {
             for (i = 0; i < a.length; i++) {
                 for (j = 0; j < a[i].length; j++) {
                     if (a[i][j] != b[i][j]) {
@@ -50,11 +51,9 @@ public class Matriser {
                     }
                 }
             }
-            erLik = false;
+            arraySjekk = false;
         }
-        if (a[i-1][j-1] == b[i-1][j-1]) {
-            erLik = true;
-        }
+
         return erLik;
 
 
