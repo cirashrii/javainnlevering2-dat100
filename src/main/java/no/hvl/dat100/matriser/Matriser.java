@@ -13,10 +13,14 @@ public class Matriser {
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
-		
+        String streng = "";
+        for(int[] rad:matrise){
+            for(int tall:rad) {
+                streng+=tall+" ";
+            }
+        streng+="\n";
+        }
+        return streng;
 	}
 
 	// c)
