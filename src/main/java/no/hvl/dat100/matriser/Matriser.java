@@ -33,8 +33,16 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
+        if (a == 0 && b == 0)
+            return true;
+        if (a == 0 || b == 0)
+            return false;
 
-		// TODO
+        if (a.length != b.length)
+            return false;
+
+		
+        // TODO
 		throw new UnsupportedOperationException("Metoden erLik ikke implementert");
 		
 	}
