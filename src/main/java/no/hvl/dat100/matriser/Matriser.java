@@ -43,48 +43,22 @@ public class Matriser {
         boolean arraySjekk = true;
         int i = 0;
         int j = 0;
-        while (erLik && arraySjekk) {
-            for (i = 0; i < a.length; i++) {
-                for (j = 0; j < a[i].length; j++) {
-                    if (a[i][j] != b[i][j]) {
-                        erLik = false;
+        if (a.length == b.length) {
+            while (erLik && arraySjekk) {
+                for (i = 0; i < a.length; i++) {
+                    for (j = 0; j < a[i].length; j++) {
+                        if (a[i][j] != b[i][j]) {
+                            erLik = false;
+                        }
                     }
                 }
+                arraySjekk = false;
             }
-            arraySjekk = false;
+        } else {
+            erLik = false;
         }
 
         return erLik;
-
-
-//        if (a == 0 && b == 0)
-//            return true;
-//        if (a == 0 || b == 0)
-//            return false;
-//
-//        if (a.length != b.length)
-//            return false;
-
-
-        // TODO
-		// throw new UnsupportedOperationException("Metoden erLik ikke implementert");
 		
-	}
-	
-	// e)
-	public static int[][] speile(int[][] matrise) {
-
-		// TODO
-
-		throw new UnsupportedOperationException("Metoden speile ikke implementert");
-	
-	}
-
-	// f)
-	public static int[][] multipliser(int[][] a, int[][] b) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
-	
 	}
 }
