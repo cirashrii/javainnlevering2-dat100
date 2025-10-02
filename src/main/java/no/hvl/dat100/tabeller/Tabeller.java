@@ -4,10 +4,8 @@ public class Tabeller {
 
 	// a) Solfrid
 	public static void skrivUt(int[] tabell) {
-        int[] timeTab = {8, 10, 14, 16, 22, 26};
-
-        for (int i = 0; i < timeTab.length; i++) {
-            System.out.print(timeTab[i] + " ");
+        for (int i = 0; i < tabell.length; i++) {
+            System.out.print(tabell[i] + " ");
         }
         System.out.println();
 
@@ -15,8 +13,6 @@ public class Tabeller {
 
 	// b) Solfrid
 	public static String tilStreng(int[] tabell) {
-        int[] tabell = {42, 67, 89};
-
         String resultat = "[";
         for (int i = 0; i < tabell.length; i++) {
             resultat += tabell[i];
