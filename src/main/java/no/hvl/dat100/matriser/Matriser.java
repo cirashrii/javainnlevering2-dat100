@@ -39,15 +39,34 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-        if (a == 0 && b == 0)
-            return true;
-        if (a == 0 || b == 0)
-            return false;
+        boolean erLik = true;
+        int i = 0;
+        int j = 0;
+        while (erLik) {
+            for (i = 0; i < a.length; i++) {
+                for (j = 0; j < a[i].length; j++) {
+                    if (a[i][j] != b[i][j]) {
+                        erLik = false;
+                    }
+                }
+            }
+            erLik = false;
+        }
+        if (a[i-1][j-1] == b[i-1][j-1]) {
+            erLik = true;
+        }
+        return erLik;
 
-        if (a.length != b.length)
-            return false;
 
-		
+//        if (a == 0 && b == 0)
+//            return true;
+//        if (a == 0 || b == 0)
+//            return false;
+//
+//        if (a.length != b.length)
+//            return false;
+
+
         // TODO
 		// throw new UnsupportedOperationException("Metoden erLik ikke implementert");
 		
