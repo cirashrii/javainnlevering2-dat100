@@ -26,3 +26,4 @@
 hs_err_pid*
 /bin/
 /target/
+src/main/java/no/hvl/dat100/matriser/Matriser.java
