@@ -23,7 +23,7 @@ public class Tabeller {
         }
         resultat += "]";
 
-        System.out.println(resultat);
+        return resultat;
     }
 
 	// c) Solfrid
