@@ -26,8 +26,11 @@ public class Matriser {
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
         int[][] matriseSkalert= new int[matrise.length][];
+        for(int i=0;i<matrise.length;i++){
+            matriseSkalert[i] = new int[matrise[i].length];
+        }
         for(int i=0;i<matriseSkalert.length;i++){
-            for(int j=0;j<matriseSkalert.length;j++) {
+            for(int j=0;j<matriseSkalert[i].length;j++) {
                 matriseSkalert[i][j]=matrise[i][j]*tall;
             }
         }
@@ -46,7 +49,7 @@ public class Matriser {
 
 		
         // TODO
-		throw new UnsupportedOperationException("Metoden erLik ikke implementert");
+		// throw new UnsupportedOperationException("Metoden erLik ikke implementert");
 		
 	}
 	
